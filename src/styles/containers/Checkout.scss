@@ -31,5 +31,22 @@
     background-color: rgba(255, 255, 255, 0);
     border: none;
   }
+
+
+  &__sidebar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--button{
+      background-color: aquamarine;
+      height: 30px;
+      font-weight: 700;
+      border-radius: 5px;
+    }
+    &--button:hover{
+      background-color:aqua;
+      cursor: pointer;
+    }
+  }
   
 }

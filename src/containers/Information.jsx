@@ -2,7 +2,7 @@ import React from 'react';
 import { useRef, useContext} from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import AddContext from '../context/AppContext'
-
+import '../styles/containers/Information.scss'
 
 const Information = () => {
   const {state, addToBuyer} = useContext(AddContext);
@@ -51,7 +51,6 @@ const Information = () => {
             <Link to='/checkout'>
               Regresar
             </Link>
-
           </div>
           <div className="information__next">
             <button
@@ -66,19 +65,21 @@ const Information = () => {
 
       <div className="information__sidebar">
         <h3>Pedido:</h3>
-        {
-          cart.map((item)=>(
-            <div 
-              className="information__item"
-              key={item.title}
-            >
-              <div className="information__element">
+        <ul>
+          {
+            cart.map((item)=>(
+              <li 
+                className="information__item"
+                key={item.title}
+              >
+                
                 <h4>{item.title}</h4>
                 <span>${item.price}</span>
-              </div>
-            </div>
-          ))
-        }
+                
+              </li>
+            ))
+          }
+        </ul>
       </div>
     </div>
   );
