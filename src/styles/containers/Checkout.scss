@@ -1,0 +1,35 @@
+.checkout{
+  margin: 50px;
+
+  // &__list{
+
+  // }
+  &__item{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 10px;
+    border: solid 1px rgb(243, 236, 223);
+    border-radius: 10px;
+  }
+  &__element{
+    display: flex;
+    align-items: center;
+    img{
+      width: 50px;
+    }
+  }
+  &__button{
+    i{
+      color: rgb(255, 71, 71);
+    }
+    i:hover{
+      color: rgb(253, 37, 37);
+      cursor: pointer;
+    }
+    margin: 0 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+  }
+  
+}

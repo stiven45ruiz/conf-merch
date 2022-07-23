@@ -1,0 +1,32 @@
+.products{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-gap: 50px 20px;
+  margin: 50px;
+  justify-items: center;
+  
+}
+
+.product__item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: solid 1px whitesmoke;
+  border-radius: 20px;
+  width: 200px;
+  padding: 30px;
+  img{
+    width: 100%;
+  }
+}
+
+.item__button{
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: aquamarine;
+}
+.item__button:hover{
+  cursor: pointer;
+  background-color: aqua;
+}
